@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
 table, th, td {
   border: 1px solid black;
@@ -8,6 +10,10 @@ table, th, td {
   padding-left: 7px;
   padding-right: 7px;
 }
+.material-icons {
+  border: none;
+  border-collapse: collapse;
+  }
 </style>
 </head>
 <body>
@@ -16,20 +22,29 @@ table, th, td {
   <tr>
     <th>Company</th>
     <th>Share Price Each</th> 
+    <th>Share Price Each Yesterday</th> 
     <th>Total Shares/Stocks Released</th> 
     <th>30 Day Average</th>
   </tr>
   <tr>
     <td>Company1</td>
     <td>5.23</td>
+    <td>6.19</td>
     <td>50</td>
     <td>2.34</td>
+        <td><span class="material-icons">
+trending_down
+      </span></td>
   </tr>
   <tr>
     <td>Company2</td>
     <td>2.34</td>
+    <td>1.22</td>
     <td>100</td>
     <td>3.11</td>
+    <td><span class="material-icons">
+trending_up
+      </span></td>
   </tr>
 </table>
 </body>
