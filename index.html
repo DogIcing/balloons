@@ -1,55 +1,546 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
+  <link rel="preconnect"
+   href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+   href="https://fonts.gstatic.com" crossorigin>
+  <link
+   href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital@1&display=swap"
+   rel="stylesheet">
   <title>The Balloons Stock System</title>
   <style>
-    body {
-          max-width: 100%; 
-    }
-    .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-    .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-    img { 
-    max-width: 100%; 
-    height: auto; 
-}
-    .navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
+   .indent {
+    margin-left: 50px;
+   }
+   
+   .fullidea {
+    background-color: #000000;
+    border-left-style: solid;
+    border-left-color: gold;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+    border-left-width: 30px;
+    color: #ffffff;
+    padding-left: 35px;
+    
+   }
+   
+   .fancyFont {
+    font-family: 'Noto Sans Display', sans-serif;
+   }
+   
+   .mention {
+    border-radius: 25px;
+    background: #ede8ec;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 75;
+    height: auto;
+    text-decoration: none;
+    color: #816d7f;
+   }
+   
+   h1,
+   h2.fullidea {
+    margin-top: 100px;
+   }
+   
+   * {
+    margin: 0px;
+    padding: 0px;
+   }
+   
+   
+   body {
+    padding: 0;
+    margin: 0;
+    background-color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   #roadmap {
+    margin-top: 5px;
+    color: white;
+    background-color: #000000;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+   }
+   
+   #invest {
+    color: white;
+    background-color: #000000;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+   }
+   
+   #workwithus {
+    color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #000000;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+   }
+    footer {
+    color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #000000;
+    padding-bottom: 25px;
+    padding-left: 25px;
+   }
+  
+  a {
+       text-decoration: none;
+       color: #ffffff;
+       }
+      #freestuff {
+    color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #000000;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+   }
+   #themain {
+    color: white;
+    margin-top: 5px;
+    padding-top: 5px;
+    background-color: #000000;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+   }
+   
+   .howthisworks {
+    margin-top: 3px;
+    color: white;
+    background-color: #000000;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+   }
+   
+   .main {
+    margin-top: 30px;
+    /* Add a top margin to avoid content overlay */
+   }
+   
+   .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 97.02%;
+    /* Full width */
+   }
+   
+   #home {
+    background-colour: #000000;
+    margin-bottom: 0px;
+   }
+   
+   img {
+    max-width: 100%;
+    height: auto;
+   }
+   
+   .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   }
+   
+   /* Change background on mouse-over */
+   .navbar a:hover {
+    background: #ddd;
+    color: black;
+   }
   </style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="howthisworks.html">How this works</a>
-  <a href="roadmap.html">Roadmap</a>
-  <a href="invest.html">Invest</a>
-</div>
-<div class="main">
-<img src="259C6B1F-B6FC-42D1-81D2-4910CB294252.jpeg" usemap="#image-map" width="2160" height="1580">
-<map name="image-map">
-    <area target="_self" alt="Learn More" title="Learn More" href="invest.html" coords="1562,1117,2007,1038" shape="rect">
-    <area target="_self" alt="View the official topic" title="View the official topic" href="https://forum.gethopscotch.com/t/balloons-currency/61353" coords="1583,598,1998,723" shape="rect">
-</map>
+ </head>
+ <body>
+  <div class="navbar">
+   <a href="#home">Home</a>
+   <a href="#StockPrices">Stock Prices</a>
+   <a href="#howthisworks">How this works</a>
+   <a href="#roadmap">Roadmap</a>
+   <a href="#invest">Invest</a>
+   <a
+    href="https://forum.gethopscotch.com/t/balloons-currency/61353">View
+    the official Balloons Topic</a>
+   <a href="#workwithus">Work with us</a>
+      <a href="#freestuff">Free Stuff</a>
   </div>
-</body>
+  <div class="main"><div></div>
+   <div id="home">
+    <img src="https://dogicing.github.io/balloons/259C6B1F-B6FC-42D1-81D2-4910CB294252.jpeg" width="2160" height="1580">  
+    
+   </div>
+   <div id="StockPrices">
+    <!--
+    <iframe
+     src="https://dogicing.github.io/balloons/example.html"
+     title="Stock Prices" width="500px">
+     </iframe>
+     -->
+   </div>
+   <div class="howthisworks" id="howthisworks">
+    <table>
+     <tr>
+      <td>
+       <img
+        src="https://img.icons8.com/officel/452/hot-air-balloon.png"
+        alt="dangit a 404">
+      </td>
+      <td>
+       <h1>To invest in this system</h1>
+       <div class="indent">
+        <ol>
+         <li>
+          <h2>Transfer some of your balloons to us</h2>
+         </li>
+         <li>
+          <h2>We'll make profits</h2>
+          
+          <details class="fullidea">
+           <summary>See The Full Idea</summary>
+           <h1>Marketing it</h1>
+           ​
+           <h2>Plan and risk for currency and stock
+            system
+            assessment</h2>
+           <p>
+            Now placing advertisements in games would
+            cost
+            balloons and or but not limited to seeds.
+            There
+            are shops offering game ads but ads can also
+            be
+            put in games without a shop (see section 4).
+            Now
+            negotiations can be made to have it as a
+            balloon
+            only transaction since balloons could be
+            awarded
+            to the balloon stock market service
+            indefinitely
+            to pay for advertisements. However, this may
+            have
+            an impact on the stock market and the
+            currency
+            in
+            general if this is abused. Therefore, I
+            propose
+            an
+            investment scheme which would be presented
+            to
+            the
+            balloon holders with the largest savings
+            which
+            would require the selected holders who enter
+            this
+            scheme to give any amount of balloons
+            towards
+            the
+            balloon stock market system, the more the
+            better,
+            possibly with a threshold decided on the
+            amount
+            of
+            selected holders who entered the scheme. The
+            said
+            holders who entered this scheme would
+            receive a
+            certain amount of the company based on the
+            balloons given with the owner(s) of the
+            stock
+            market system holding at least 51% to
+            maintain
+            influence over the system. Therefore money
+            earned
+            by the system would be paid to the holders
+            based
+            on their holding percentage.
+           </p>
+           <h2>
+            Making an earning
+           </h2>
+           There are 3 ways to earn money for the
+           system:
+           <ol>
+            <li>
+             <b>Donations</b> Donations would have the
+             least
+             impact on the way the system is viewed eg.
+             fairness. However, in my view the risks
+             outweigh
+             the benefits. See below. Therefore, I
+             believe
+             that it could be used as an additional
+             source
+             of
+             income but not solely relied on.
+             <br>
+             <br>
+             <b>Risks</b> If the system does
+             not pick up, donations would prove
+             ineffective.
+            </li>
+            <br>
+            <li>
+             <b>Shops</b> There are two ways to run this
+             shop
+             system.
+             <ol>
+              <br>
+              <li>
+               Volunteers could work in the shop,
+               however
+               the
+               amount of people signing up would be
+               questionable. Little people signing up,
+               leaves
+               little room to be “picky”. But giving an
+               incentive could make more people sign up.
+              </li>
+              <br>
+              <li>
+               Paid workers could work in the shop,
+               however
+               this
+               may impact the fairness of the system
+               since
+               balloons would most likely be the salary,
+               and
+               as
+               mentioned in paragraph 1, could be
+               awarded
+               indefinitely. Therefore I propose that
+               shops
+               would run on donations as opposed to
+               balloons
+               awarded for nothing.
+              </li>
+             </ol>
+             <br>
+             <b>Risks</b> risks mentioned and shop might
+             not
+             be
+             popular.
+            </li>
+           </ol>
+           <h2>
+            Obtaining full ownership of the system again
+           </h2>
+           <p>
+            Once the system has earned somewhat enough
+            money,
+            the system may purchase the ownership back
+            from
+            the
+            holders.</p>
+           <p>
+            <b>Risks</b> Holders not wanting to sell
+            back
+           </p>
+           <p>
+            <b>Risk solution</b> Binding contract
+            forcing
+            holder to sell to balloons stock on the
+            conditions
+            that they get a fixed, reasonable percent
+            more.
+           </p>
+           <h2>Advertising in games without shops</h2>
+           <p>
+            Deals could still be made to advertise on
+            games
+            without shops.
+           </p>
+           <p>
+            <b>Risks</b> None really since worst is they
+            won’t
+            accept the offer.
+           </p>
+           <h2>Summary</h2>
+           <ol>
+            <li>
+             Run investment scheme.
+            </li>
+            <li>
+             Run donations that would fuel the payment
+             for
+             the
+             workers, possibly a contract with the
+             workers
+             that
+             they each get a part in the donation (their
+             pay
+             is
+             depending on the donations so its
+             variable).
+            </li>
+            <li>
+             Once enough money is acquired, obtain full
+             ownership of the system again.
+            </li>
+            <li>
+             Advertise in many many games.
+            </li>
+           </ol>
+           ​
+          </details>
+         </li>
+         <li>
+          <h2>Recieve a percentage of our profits</h2>
+         </li>
+        </ol>
+       </div>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div id="roadmap">
+    <table>
+     <tr>
+      <td>
+       <ol>
+        <li>
+         <h2>Run investment scheme.</h2>
+        </li>
+        <li>
+         <h2>
+          Run donations that would fuel the payment for
+          the workers
+         </h2>
+        </li>
+        <li>
+         <h2>
+          Once enough money is acquired, obtain full
+          ownership of the system again.
+         </h2>
+        </li>
+        <li>
+         <h2><b>
+           Advertise in many many games.
+          </b></h2>
+        </li>
+       </ol>
+      </td>
+      <td>
+       <img
+        src="https://img.icons8.com/color/452/party-baloon.png"
+        alt="Dangit a 404">
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div id="invest">
+    <table>
+     <tr>
+      <td style="padding-right:50px"><img
+        src="https://img.icons8.com/office/200/000000/money-bag.png"
+        alt="dangit a 404" width="400px"></td>
+      <td>
+       <h1>Invest in this system</h1>
+       <p>Do you have lots of balloons? Do you believe
+        in
+        this system? Are you looking for an easy way to
+        earn more balloons? If yes, this investment is
+        for
+        you! Ask <a
+         href="https://forum.gethopscotch.com/u/dogicing"
+         class="mention">@DogIcing</a> on the forum.</p>
+
+
+      </td>
+     </tr>
+    </table>
+   </div>
+   
+   <div id="workwithus">
+    <table>
+     <tr>
+      <td>
+       <h1>Run Our Shop</h1>
+       <p>Help us run our shop! We're looking for 2
+        people to help. Each worker get paid half of the
+        donations that we recieve (half + half = whole)
+       </p>
+      </td>
+      <td><img
+        src="https://img.icons8.com/color/200/000000/shop.png" />
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div id="themain">
+    <table>
+     <tr>
+      <td><img
+        src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/200/000000/external-return-on-investment-success-flatart-icons-flat-flatarticons.png"
+        alt="dangit a 404"></td>
+      <td>
+       <h1 class="fancyFont">Invest Invest Invest!</h1>
+       <p>Watch your savings grow with stocks! Enquire
+        by tagging <a
+         href="forum.gethopscotch.com/u/dogicing"
+         class="mention">@DogIcing</a> on the forum!</p>
+                  <h1>Recieve <i>special</i> badges!</h1>
+         
+                  <table><tr><td>
+
+    <img src="https://github.com/DogIcing/balloons/blob/main/assets/badges/043B609C-9076-4DE7-BBEC-8C56E68D1DEA.png?raw=true" alt="dangit a 404" width="200px">
+    </td><td>
+
+    <img src="https://github.com/DogIcing/balloons/blob/main/assets/badges/81320DF7-4DAB-40BE-9237-21F1E0B64F72.png?raw=true" alt="dangit a 404" width="200px">
+    </td><td>
+
+    <img src="https://github.com/DogIcing/balloons/blob/main/assets/badges/80B1640D-1521-47B0-9071-B63E896E86AE.png?raw=true" alt="dangit a 404" width="200px">
+    </td>
+    </tr></table>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div id="freestuff">
+   <table><tr><td>
+   <h1>Free Stuff</h1><hr>
+   <h2>Get a free desktop background</h2>
+    <a
+     href="/assets/promotional-assets/ABD0B841-9AD9-4E41-81C4-67649363AA00.png"
+     download>
+     <img
+      src="https://raw.githubusercontent.com/DogIcing/balloons/main/assets/promotional-assets/ABD0B841-9AD9-4E41-81C4-67649363AA00.png"
+      alt="Click Here" width="300" height="auto">
+    </a><hr>  <h2>Get a free iPhone background</h2>
+        <a
+     href="/assets/promotional-assets/D875EF0D-CB54-49CD-8CDE-9DC4B4004E88.png"
+     download>
+     <img
+      src="https://github.com/DogIcing/balloons/blob/main/assets/promotional-assets/D875EF0D-CB54-49CD-8CDE-9DC4B4004E88.png?raw=true"
+      alt="Click Here" width="70" height="auto">
+    </a>
+    </td><td style="padding-left: 200px"><img src="https://img.icons8.com/external-wanicon-flat-wanicon/600/000000/external-free-marketing-strategy-wanicon-flat-wanicon.png"/></td></tr></table>
+    </div>
+  </div>
+ </body>
+ <footer>
+ Icons by <a href="https://icons8.com" style="text-decoration: underline">Icons8</a>
+ </footer>
 </html>
